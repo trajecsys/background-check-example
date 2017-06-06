@@ -7,7 +7,13 @@ The following parameters are mandatory:
 * apikey - We will give you this
 * provider - You probably want "background"
 * status - See status choices below
-* status_date - We will try to parse almost any unambiguous format you provide.  We encourage an ISO-compliant format like **2008-11-01T19:35:00.0000000-07:00**
+* status_date - We will try to parse almost any unambiguous format you provide.  We encourage an ISO-compliant format like 
+```
+#!c#
+
+2008-11-01T19:35:00.0000000-07:00
+```
+
 * program_code - Each program has a unique code that will be negotiated with you
 * student_email - The email address of the student being updated.  We match all our background updates by student
 
