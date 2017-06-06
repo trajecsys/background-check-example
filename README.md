@@ -13,10 +13,10 @@ The following parameters are mandatory:
 
 The status code options are:
 
-* InProgress
-* Complete
-* Alert
-* Cancelled
+* InProgress - Informs us the background check has begun
+* Complete - Informs us of successful completion with no review needed.
+* Alert - Informs us that review is required by the program, or some failure criteria has been hit on the review
+* Cancelled - Informs us that you will not be completing the review (probably due to student cancellation)
 
 If you get a "200" response with some informational JSON, your update succeeded.  Otherwise, you will receive a 4xx or 5xx code with a description of what went wrong.
 
