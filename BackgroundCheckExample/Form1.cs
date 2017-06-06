@@ -40,10 +40,6 @@ namespace BackgroundCheckExample
             var reqparm = new System.Collections.Specialized.NameValueCollection();
             reqparm.Add("apikey", txtApiKey.Text);
             reqparm.Add("status", cmbStatus.Text);
-
-            var td = DateTime.Now.ToLongDateString();
-            var tdp = DateTime.Parse(td);
-
             reqparm.Add("status_date", DateTime.Now.ToLongDateString());
             reqparm.Add("provider", txtProvider.Text);
             reqparm.Add("student_email", txtEmail.Text);
