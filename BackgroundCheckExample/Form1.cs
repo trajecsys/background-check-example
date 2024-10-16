@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BackgroundCheckExample
@@ -39,15 +34,14 @@ namespace BackgroundCheckExample
 
             var reqparm = new System.Collections.Specialized.NameValueCollection();
             reqparm.Add("apikey", txtApiKey.Text);
+            reqparm.Add("type", (cmbType.SelectedIndex + 1).ToString());
             reqparm.Add("status", cmbStatus.Text);
             reqparm.Add("status_date", DateTime.Now.ToLongDateString());
             reqparm.Add("provider", txtProvider.Text);
             reqparm.Add("student_email", txtEmail.Text);
 
-            // This version not yet implemented
-            // reqparm.Add("program_code", txtProgramCode.Text);
-
-            reqparm.Add("promo_code", txtProgramCode.Text);
+            // Used to be 'promo_code'. Backwards compatible.
+            reqparm.Add("program_code", txtProgramCode.Text);
 
             var result = "";
             try { 
