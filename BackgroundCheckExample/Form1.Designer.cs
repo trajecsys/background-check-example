@@ -42,6 +42,8 @@
             this.txtProvider = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.btnSendUpdate = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -88,7 +90,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(86, 84);
+            this.txtEmail.Location = new System.Drawing.Point(86, 110);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(408, 20);
             this.txtEmail.TabIndex = 7;
@@ -96,7 +98,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 87);
+            this.label4.Location = new System.Drawing.Point(0, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 6;
@@ -105,7 +107,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 113);
+            this.label5.Location = new System.Drawing.Point(0, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 8;
@@ -113,7 +115,7 @@
             // 
             // txtProgramCode
             // 
-            this.txtProgramCode.Location = new System.Drawing.Point(86, 136);
+            this.txtProgramCode.Location = new System.Drawing.Point(86, 163);
             this.txtProgramCode.Name = "txtProgramCode";
             this.txtProgramCode.Size = new System.Drawing.Size(408, 20);
             this.txtProgramCode.TabIndex = 11;
@@ -121,7 +123,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(0, 139);
+            this.label6.Location = new System.Drawing.Point(0, 166);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 13);
             this.label6.TabIndex = 10;
@@ -130,7 +132,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(0, 165);
+            this.label7.Location = new System.Drawing.Point(0, 213);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 12;
@@ -141,7 +143,7 @@
             this.txtProvider.Name = "txtProvider";
             this.txtProvider.Size = new System.Drawing.Size(408, 20);
             this.txtProvider.TabIndex = 4;
-            this.txtProvider.Text = "background";
+            this.txtProvider.Text = "Company name";
             // 
             // cmbStatus
             // 
@@ -158,14 +160,14 @@
             "Complete",
             "Alert",
             "Cancelled"});
-            this.cmbStatus.Location = new System.Drawing.Point(86, 110);
+            this.cmbStatus.Location = new System.Drawing.Point(86, 136);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(408, 21);
             this.cmbStatus.TabIndex = 8;
             // 
             // btnSendUpdate
             // 
-            this.btnSendUpdate.Location = new System.Drawing.Point(12, 162);
+            this.btnSendUpdate.Location = new System.Drawing.Point(12, 189);
             this.btnSendUpdate.Name = "btnSendUpdate";
             this.btnSendUpdate.Size = new System.Drawing.Size(115, 23);
             this.btnSendUpdate.TabIndex = 15;
@@ -173,11 +175,32 @@
             this.btnSendUpdate.UseVisualStyleBackColor = true;
             this.btnSendUpdate.Click += new System.EventHandler(this.btnSendUpdate_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(0, 87);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Type:";
+            // 
+            // cmbType
+            // 
+            this.cmbType.Items.AddRange(new object[] {
+            "1 (background check)",
+            "2 (immunization)"});
+            this.cmbType.Location = new System.Drawing.Point(86, 84);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(408, 21);
+            this.cmbType.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 190);
+            this.ClientSize = new System.Drawing.Size(506, 235);
+            this.Controls.Add(this.cmbType);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSendUpdate);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.txtProvider);
@@ -216,6 +239,8 @@
         private System.Windows.Forms.TextBox txtProvider;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.Button btnSendUpdate;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbType;
     }
 }
 
